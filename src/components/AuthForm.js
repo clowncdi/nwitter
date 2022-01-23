@@ -57,15 +57,15 @@ const AuthForm = () => {
         />
         <input
           type="submit"
-          value={newAccount ? "로그인" : "회원가입"}
+          value={newAccount ? "회원가입" : "로그인"}
           className="authInput authSubmit"
         />
         {error && <span className="authError">{error}</span>}
       </form>
       <span onClick={toggleAccount} className="authSwitch">
-        {newAccount ? "회원가입" : "로그인"}
+        {newAccount ? "로그인" : "회원가입"}
       </span>
     </>
-  );git
+  );
 };
 export default AuthForm;
